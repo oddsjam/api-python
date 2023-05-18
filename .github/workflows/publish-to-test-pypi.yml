@@ -22,7 +22,7 @@ jobs:
         build
         --user
     - name: set env
-      run: echo "::set-env name=NOW::v$(date +'%Y%m%d.%H%M%S')"
+      run: echo "NOW=v$(date +'%Y%m%d.%H%M%S')" >> $GITHUB_ENV
     - name: Update version in setup.py
       run: >-
         sed -i "s/dynamic \= \[\"version\"\]/version \= \"${{ env.NOW }}\"/g" pyproject.toml
