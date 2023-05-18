@@ -127,4 +127,10 @@ Flatten and output data using pandas:
     df = df.loc[df['market_name'] == 'Moneyline']
 ```
 
+# PyPi
+
+* Prod: https://pypi.org/project/oddsjam-api
+* Test: https://test.pypi.org/project/oddsjam-api-test
+
+
 ORIGINAL CREDIT GOES TO https://github.com/cooperbrandon1
