@@ -1,9 +1,9 @@
 [project]
-name = "oddsjam-api"
-version = "0.2.8"
+name = "oddsjam-api-ridersofrohan"
+version = "{{VERSION_PLACEHOLDER}}"
 authors = [
-  { name="Brandon Cooper", email="cooper.brandon@outlook.com" },
-  { name="Rohan Challa", email="rchalla769@gmail.com" },
+    { name="Rohan Challa", email="rchalla769@gmail.com" },
+    { name="Brandon Cooper", email="cooper.brandon@outlook.com" },
 ]
 description = "A lightweight OddsJam API wrapper"
 readme = "README.md"
