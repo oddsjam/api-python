@@ -23,10 +23,10 @@ jobs:
         --user
     - name: set env
       run: echo "NOW=v$(date +'%Y%m%d.%H%M%S')" >> $GITHUB_ENV
-    - name: Update version in setup.py
+    - name: Update project name in setup.py
       run: >-
         sed -i "s/oddsjam-api/oddsjam-api-test/g" pyproject.toml
-    - name: Set project name in setup.py
+    - name: Set version in setup.py
       run: >-
         sed -i "s/dynamic \= \[\"version\"\]/version \= \"${{ env.NOW }}\"/g" pyproject.toml
     - name: Build a binary wheel and a source tarball
