@@ -14,6 +14,12 @@ jobs:
       uses: actions/setup-python@v4
       with:
         python-version: "3.x"
+    - name: Install pypa/build
+      run: >-
+        python -m
+        pip install
+        build
+        --user
     - name: Set Release tag via set-output
       id: vars
       run: echo ::set-output name=tag::${GITHUB_REF#refs/*/}
